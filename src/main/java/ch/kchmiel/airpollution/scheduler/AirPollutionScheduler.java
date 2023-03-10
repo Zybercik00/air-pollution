@@ -25,5 +25,6 @@ public class AirPollutionScheduler {
         log.info("New report loaded");
         cache.setReport(report);
     }
+
 }
 

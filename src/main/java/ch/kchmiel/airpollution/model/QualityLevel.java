@@ -7,7 +7,7 @@ import java.util.Arrays;
 @Getter
 public enum QualityLevel {
 
-    VERY_G0OD("Bardzo dobry", 0),
+    VERY_GOOD("Bardzo dobry", 0),
     GOOD("Dobry", 1),
     MODERATE("Umiarkowany", 2),
     SUFFICIENT("Dostateczny", 3),

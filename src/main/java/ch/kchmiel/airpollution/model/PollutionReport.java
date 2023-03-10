@@ -14,4 +14,10 @@ import java.util.List;
 public class PollutionReport {
 
     private List<PollutionReportEntry> entries;
+
+    public PollutionReportEntry get(String city) {
+        return entries.stream().filter(e -> e.getCityName().equals(city))
+                .findFirst()
+                .orElse(null);
+    }
 }
