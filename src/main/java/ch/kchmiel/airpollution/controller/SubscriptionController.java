@@ -13,14 +13,13 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(value = "/v1/subscriptions")
+@RequestMapping(value = "/v1/subscription")
 @RequiredArgsConstructor
 public class SubscriptionController {
     private final SubscriptionEmailService subscriptionEmailService;
-    private final SubscriberRepository subscriberRepository;
 
 
-    @PostMapping("/subscribe")
+    @PostMapping
     public ResponseEntity<List<Subscriber>> subscribe(@RequestBody SubscriptionRequest request) {
         subscriptionEmailService.subscribe(request.getEmail(), request.getCity());
         return ResponseEntity.ok().build();

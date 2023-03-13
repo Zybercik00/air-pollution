@@ -1,6 +1,5 @@
 package ch.kchmiel.airpollution;
 
-import ch.kchmiel.airpollution.service.AirPollutionService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

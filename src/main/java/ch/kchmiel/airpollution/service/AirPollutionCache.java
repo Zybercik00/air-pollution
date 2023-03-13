@@ -2,6 +2,7 @@ package ch.kchmiel.airpollution.service;
 
 import ch.kchmiel.airpollution.model.PollutionReport;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
@@ -20,6 +21,7 @@ public class AirPollutionCache {
     }
 
     public void setReport(PollutionReport report) {
+
         this.report = report;
     }
 
